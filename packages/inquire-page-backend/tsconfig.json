@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "allowSyntheticDefaultImports": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "es6",
+      "es7"
+    ],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": false
+}

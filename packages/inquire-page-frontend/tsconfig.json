@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "isolatedModules": false,
+    "lib": [
+      "dom",
+      "es6",
+      "es7"
+    ],
+    "removeComments": true,
+    "noLib": false,
+    "noEmitHelpers": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "outDir": "dist/",
+    "declaration": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts"
+  ]
+}
