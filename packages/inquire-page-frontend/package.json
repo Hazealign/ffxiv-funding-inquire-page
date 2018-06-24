@@ -11,18 +11,23 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@material-ui/core": "^1.2.3",
-    "@types/react-recaptcha": "^2.3.2",
-    "mobx": "^5.0.3",
-    "mobx-react": "^5.2.3",
-    "mobx-utils": "^5.0.0",
-    "parcel": "^1.9.2",
+    "helpful-decorators": "^1.7.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.3",
     "react-recaptcha": "^2.3.8",
-    "save": "^2.3.2",
-    "typestyle": "^2.0.1"
+    "typestyle": "^2.0.1",
+    "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
+    "@types/react": "^16.4.1",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-recaptcha": "^2.3.2",
+    "@types/whatwg-fetch": "^0.0.33",
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.18.0",
+    "parcel-bundler": "^1.9.2",
+    "parcel-plugin-typescript": "^1.0.0",
     "tslint": "^5.10.0",
     "tslint-config-standard": "^7.1.0",
     "typescript": "^2.9.2"

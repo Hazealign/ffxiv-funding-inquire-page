@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>파이널판타지14 광고 후원자 인증확인 페이지</title>
+  <style>
+    div, h1, h2, h3, h4, h5, h6, span {
+      font-family: 'NanumSquare' !important;
+    }
+
+    #background {
+      width: 110%;
+      height: 110%;
+      position: fixed;
+      display: block;
+      background: url(https://cdn.discordapp.com/attachments/359943342198358017/460420416331055114/ffxiv_20180304_213245.png);
+      overflow: hidden;
+      filter: blur(3px); 
+      -webkit-filter: blur(3px); 
+      -moz-filter: blur(3px);
+      -o-filter: blur(3px);
+      -ms-filter: blur(3px);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+      padding: 0;
+      margin: -10px;
+    }
+
+    #root {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="background"></div>
+  <div id="root"></div>
+  <script src="./index.tsx"></script>
+</body>
+
+</html>
