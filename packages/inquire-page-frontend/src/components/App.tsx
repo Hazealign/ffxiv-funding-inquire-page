@@ -87,7 +87,10 @@ export class App extends React.Component<any, { message?: string, showDialog: bo
 
       this.response = body
 
-      if (body.user === undefined) return
+      if (body.user === undefined) {
+        type = DialogType.NotFound
+      }
+
       if (body.user.group === GroupType.Group0) {
         type = DialogType.Group0
       } else {
