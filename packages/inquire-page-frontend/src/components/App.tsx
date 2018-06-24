@@ -1,5 +1,5 @@
 import * as React from 'react'
-import * as Recaptcha from 'react-recaptcha'
+import * as Recaptcha from 'reaptcha'
 import { style } from 'typestyle'
 import { Card, CardContent, CardActions, Typography, Button, MuiThemeProvider, createMuiTheme, TextField, Dialog, DialogActions, Snackbar, Slide } from '@material-ui/core'
 import { ResultDialog, DialogType } from './dialogs/ResultDialog'
@@ -72,7 +72,7 @@ export class App extends React.Component<any, { message?: string, showDialog: bo
       return
     }
 
-    if (this.lastPhone.length >= 4 || this.lastPhone === '') {
+    if (this.lastPhone.length > 4 || this.lastPhone === '') {
       this.setState({ message: '연락처 뒤 4자리를 확인해주세요!' })
       return
     }
@@ -109,7 +109,7 @@ export class App extends React.Component<any, { message?: string, showDialog: bo
     this.setState({ showDialog: false })
   }
 
-  onCaptchaUpdate (_) {
+  onCaptchaUpdate () {
     this.captchaStatus = true
   }
 
@@ -137,7 +137,7 @@ export class App extends React.Component<any, { message?: string, showDialog: bo
             <div className={formStyle}>
               <TextField required type='number' style={{ width: 250, margin: '0px 20px' }} id='required' label='후원 번호' margin='normal' onChange={e => this.updateIndex(e)} />
               <TextField required type='number' style={{ width: 250, margin: '0px 20px' }} id='required' label='연락처 뒤 4자리' margin='normal' onChange={e => this.updateLastPhone(e)} />
-              <div style={{ margin: '20px auto', display: 'inline-block' }}><Recaptcha sitekey='6LdyemAUAAAAAFCnbNtuq8hbwKDDTr6vIaBC6Ua_' render='explicit' verifyCallback={value => this.onCaptchaUpdate(value)} /></div>
+              <div style={{ margin: '20px auto', display: 'inline-block' }}><Recaptcha sitekey='6LdyemAUAAAAAFCnbNtuq8hbwKDDTr6vIaBC6Ua_' onVerify={() => this.onCaptchaUpdate()} /></div>
             </div>
 
             <Typography>※ 본 화면은 <b>PC와 모던 브라우저(크롬, 파이어폭스, 엣지, 사파리 등)</b>에 최적화 되어있습니다.</Typography>
